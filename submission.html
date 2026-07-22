@@ -17,21 +17,18 @@
       color: #ffffff;
     }
 
-    /* Top White Header with Character Logo */
+    /* Top White Header */
     .header-logo-container {
       padding: 20px 0 20px 8%;
       background-color: #ffffff;
     }
 
-    .character-logo {
+    .site-logo {
       width: 55px;
       height: 55px;
       border-radius: 50%;
-      background-color: #8B262A;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
+      object-fit: contain;
+      display: block;
     }
 
     /* Red Maroon Main Form Container */
@@ -57,7 +54,7 @@
       font-weight: 900;
       letter-spacing: -1px;
       margin-bottom: 25px;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     .info-paragraph {
@@ -83,7 +80,7 @@
       margin-bottom: 15px;
     }
 
-    /* Form Input Fields with White Border and Thicker Padding */
+    /* Form Input Fields with White Border */
     .form-input {
       width: 100%;
       padding: 10px 14px;
@@ -181,17 +178,9 @@
 </head>
 <body>
 
-  <!-- Top White Section with SVG Character Logo -->
+  <!-- Top White Section with Logo -->
   <header class="header-logo-container">
-    <div class="character-logo">
-      <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="48" stroke="white" stroke-width="4"/>
-        <path d="M30 40 C 35 25, 65 25, 70 40 L75 45 C75 45, 25 45, 25 45 Z" fill="white"/>
-        <circle cx="40" cy="55" r="3" fill="white"/>
-        <circle cx="60" cy="55" r="3" fill="white"/>
-        <path d="M40 70 Q 50 80 60 70" stroke="white" stroke-width="3" fill="none"/>
-      </svg>
-    </div>
+    <img src="images/logo.png" alt="Logo" class="site-logo">
   </header>
 
   <!-- Red Hero Section -->
@@ -275,4 +264,3 @@
 
 </body>
 </html>
-
